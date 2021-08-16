@@ -140,7 +140,37 @@
 					<div class="inner">
 						<h2>Projects</h2>
 							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-			
+							<div class="accordion row aln-middle">
+								<div class="col-2"><img src="images/discord.png" class="image" style="height: 100px; width: 100px;"/></div>
+								<div class="col-9"><h2>Stairway to Consciousness</h2></div>
+							</div>
+							<div class="panelAccordion">
+							<p>Workshop course STAIRWAY TO CONSCIOUSNESS is being prepared and will be led by Academy of Cognizance team. The workshop concept is based on of NFE methodology and will implement workshops and routines specifically created and selected to match the participant profile, activate all their senses and find most fitting approaches in order to reach the best possible results. The trainer’s team has designed a program which is concerned with specific categories of participants, has a clear focus of defined purposes, is flexible in their methods and organization.</p>
+							</div>
+
+							<div class="accordion row aln-middle">
+								<div class="col-2"><img src="images/discord.png" class="image" style="height: 100px; width: 100px;"/></div>
+								<div class="col-9"> <h2>Under the Sun</h2></div>
+							</div>
+							<div class="panelAccordion">
+								<p> THE SUN retreat course was developed by Academy of Cognizance which has successfully started offering different trainings and workshops in 2020. 
+									Our concept goes beyond everyday routine and comfort.
+									 At UNDER THE SUN you will experience a unique, open and personal atmosphere, with space for each individual to discover 
+									 themselves and their environment once again. We are here to help you finding peace and balance of mind, take a break 
+									 from everyday routine and find a key how to approach your reality. For those who are already enjoying the path of mindfulness 
+									 and for those who have never experienced it before. Joining UNDER THE SUN means enjoying the more simple things and experiencing 
+									 the benefits that mindfulness has to offer. In the 4 days course we will be spending time together, exploring ourselves, learning about our
+									  surroundings or just listen to the birds or a crackling fire. UNDER THE SUN is not just a taking a break from everyday life, it’s about connecting 
+									  with yourself, each other and nature.</p>
+							</div>
+
+							<div class="accordion row aln-middle">
+								<div class="col-2"><img src="images/discord.png" class="image" style="height: 100px; width: 100px;"/></div>
+								<div class="col-9"> <h2>Discord Communit</h2></div>
+							</div>
+							<div class="panelAccordion">
+								<p>The main objective of this platform is to strengthen the bonds that bring us together in the community. We can better manage the means of communication in the appropriate places for that purpose in our community, making known all the news and offering a space where everyone feels at home with the necessary comfort to share with the community. Create a space for you to discover Mindfulness and Emotional Intelligence tools that you can use in personal and professional field. This platform is created for conversation, inspiration and motivation. Feel free to be part of this community!</p>
+							</div>
 					</div>
 				</section>
 
@@ -268,7 +298,22 @@
 					}
 				});
 			</script>
-
+			<script>
+				var acc = document.getElementsByClassName("accordion");
+				var i;
+				
+				for (i = 0; i < acc.length; i++) {
+				acc[i].addEventListener("click", function() {
+					this.classList.toggle("activeAccordion");
+					var panel = this.nextElementSibling;
+					if (panel.style.maxHeight) {
+					panel.style.maxHeight = null;
+					} else {
+					panel.style.maxHeight = panel.scrollHeight + "px";
+					} 
+				});
+				}
+			</script>
 
 			
 	</body>

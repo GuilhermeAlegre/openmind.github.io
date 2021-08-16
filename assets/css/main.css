@@ -3973,3 +3973,44 @@ input, select, textarea {
 	height: 100%;
 }
 
+/* acordean */
+.accordion {
+	background-color: #781b8f;
+	color: #444;
+	cursor: pointer;
+	padding: 20px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+	transition: 0.4s;
+	margin: 10px;
+	border-radius: 1em;
+  }
+  
+  .activeAccordion, .accordion:hover {
+	background-color: rgb(91, 7, 112);
+  }
+  
+  .accordion:after {
+	content: '\22C1';
+	color: #aa4cbe;
+	font-weight: bold;
+	float: right;
+	margin-left: 0px;
+	font-size: 40px;
+  }
+  
+  .activeAccordion:after {
+	content: "\22C0";
+  }
+  
+  .panelAccordion {
+	padding: 0 18px;
+	background-color: #aa4cbe;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+  }
+
